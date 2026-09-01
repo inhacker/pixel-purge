@@ -84,3 +84,9 @@ out top-to-bottom as it executes/depends:
   changes with clean, descriptive messages and push to `origin/main`
   (remote already configured, `gh` authenticated) after meaningful changes,
   without waiting to be asked each time.
+- Commit and push as you go, not just at the end of a session: after each
+  self-contained piece of work (a fix, a feature, a balance tweak), commit
+  it with a clean, descriptive message and push to `origin/main`
+  immediately, rather than batching multiple unrelated changes into one
+  commit at the end. This is how we avoid losing work or status if a
+  session is interrupted.
