@@ -90,3 +90,6 @@ out top-to-bottom as it executes/depends:
   immediately, rather than batching multiple unrelated changes into one
   commit at the end. This is how we avoid losing work or status if a
   session is interrupted.
+- Before planning or spawning an agent team, read
+  `Docs/agent-teams-guide.md` — the master reference for when to use a team,
+  how to size and prompt it, and its mechanics and failure modes.
