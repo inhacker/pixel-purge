@@ -66,7 +66,6 @@
         const highlighted = !!tier.highlighted;
         const features = Array.isArray(tier.features) ? tier.features : [];
         const period = tier.period ? '/' + tier.period : '';
-        const ctaLabel = highlighted ? 'Get started' : tier.price === 0 ? 'Get started' : 'Talk to sales';
         const ctaClass = highlighted ? 'btn-primary' : 'btn-secondary';
 
         return (
@@ -78,7 +77,7 @@
           '<ul class="price-features">' +
           features.map(function (f) { return '<li>' + escapeHtml(f) + '</li>'; }).join('') +
           '</ul>' +
-          '<a class="btn ' + ctaClass + ' price-cta" href="#contact">' + ctaLabel + '</a>' +
+          '<a class="btn ' + ctaClass + ' price-cta" href="#contact">Get started</a>' +
           '</article>'
         );
       })

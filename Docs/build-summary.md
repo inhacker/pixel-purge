@@ -72,6 +72,7 @@ user input can't forge log lines. `X-Powered-By` is disabled.
 | :-- | --: | --: | --: |
 | First review | 64 | 58 | 6 |
 | Re-check after fixes | 68 | 68 | 0 |
+| After CTA change | 70 | 70 | 0 |
 
 The 6 first-pass failures (1 medium, 5 low/trivial) were: source-code
 exposure via static serving, weak email validation, HTML stack traces on bad
@@ -94,5 +95,5 @@ page in headless Chrome at desktop (1440px) and phone (390px) widths.
 ## Known limitations
 
 - Contact submissions are only logged to the console — no storage or email.
-- Pricing buttons ("Get started", "Talk to sales") are not wired to anything.
+- All pricing buttons say "Get started" and jump to the contact form; the form does not record which plan was chosen.
 - Features and pricing data are hard-coded in `src/server.js`.

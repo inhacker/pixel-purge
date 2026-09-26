@@ -2,7 +2,7 @@
 
 Reviewer: qa. Date: 2026-09-26. Server was started with `npm start`, every endpoint was exercised with curl, and `src/app.js` was run in jsdom against the live server (jsdom is installed in the scratchpad, not in the repo). The server was stopped afterwards and port 3000 is free.
 
-**Result: 68 checks — 68 PASS, 0 FAIL after the fixes. The first pass was 64 checks with 58 PASS and 6 FAIL; all 6 failures are fixed and re-verified, plus 4 new checks added for the fixes.**
+**Result: 70 checks — 70 PASS, 0 FAIL after the fixes. The first pass was 64 checks with 58 PASS and 6 FAIL; all 6 failures are fixed and re-verified, plus 6 new checks (4 for the fixes, 2 for the Enterprise CTA change).**
 
 ## Backend
 
@@ -63,6 +63,8 @@ Reviewer: qa. Date: 2026-09-26. Server was started with `npm start`, every endpo
 | F2.8 | Submit button is disabled while the request is in flight and re-enabled in `finally` | PASS |
 | F2.9 | Price formatting gives `$0/month`, `$49/month`, `$499/month` | PASS |
 | F2.10 | Highlighted tier has `price-card--highlighted` and a "Most teams choose this" tag | PASS |
+| F2.11 | All three live-rendered pricing CTAs say "Get started" (`app.js:80`); the highlighted Pro tier keeps `btn-primary`, the others `btn-secondary`; all link to `#contact`. No "Talk to sales" remains in `src/` or README | PASS (change requested after review: Enterprise CTA was "Talk to sales") |
+| F2.12 | Static fallback cards (`index.html:113,126,138`) also say "Get started" with the same styling. Confirmed with scripts off and with the API failing (`data-state` stays `fallback`, no JS errors) | PASS |
 | F3.1 | API strings are passed through `escapeHtml` before `innerHTML` (`app.js:31-33`, `app.js:75-79`) | PASS |
 | F3.2 | No debug leftovers; only a `console.warn` on fetch failure | PASS |
 | F4.1 | Every input has a `<label for>` | PASS |
@@ -122,4 +124,6 @@ Reviewer: qa. Date: 2026-09-26. Server was started with `npm start`, every endpo
 - **Client-side email check:** the form uses `novalidate` and only checks for empty fields on the client. Email format errors come from the server, which the page shows correctly.
 
 ## Re-check status
+CTA change (Enterprise button "Talk to sales" → "Get started", chosen by the user after review) re-checked after "CTA fix landed": F2.11 and F2.12 pass, the earlier end-to-end run still passes, and no JS errors. Port 3000 is free.
+
 Re-checked on 2026-09-26 after "Backend fixes landed" and "Frontend fixes landed". Full live run (curl of every endpoint and edge case, plus the jsdom end-to-end run) passed with no JS errors. The server was stopped afterwards and port 3000 is free.
