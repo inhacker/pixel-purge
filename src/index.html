@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neural Flow — Adaptive AI infrastructure</title>
+<meta name="description" content="Neural Flow is the inference and training layer behind products that adapt in real time. Plug it into your stack in an afternoon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top">Neural Flow</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-ghost header-cta" href="#contact">Talk to us</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1>Ship AI features your users actually feel.</h1>
+        <p class="hero-sub">
+          Neural Flow is the inference and training layer behind products that
+          need to adapt in real time — plug it into your stack and stop
+          babysitting infrastructure.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#pricing">Start free</a>
+          <a class="btn btn-secondary" href="#features">See how it works</a>
+        </div>
+        <dl class="hero-stats">
+          <div><dt>Median latency</dt><dd>48ms</dd></div>
+          <div><dt>Uptime</dt><dd>99.98%</dd></div>
+          <div><dt>Served monthly</dt><dd>1.2B+ calls</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-graph" aria-hidden="true">
+        <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+          <g class="graph-lines" stroke-width="1.4" fill="none">
+            <path d="M70,110 L200,90"></path>
+            <path d="M70,110 L200,210"></path>
+            <path d="M70,310 L200,210"></path>
+            <path d="M70,310 L200,330"></path>
+            <path d="M200,90 L340,150"></path>
+            <path d="M200,90 L340,260"></path>
+            <path d="M200,210 L340,150"></path>
+            <path d="M200,210 L340,260"></path>
+            <path d="M200,330 L340,260"></path>
+          </g>
+          <g class="graph-nodes">
+            <circle class="node node-a" cx="70" cy="110" r="7"></circle>
+            <circle class="node node-a" cx="70" cy="310" r="7"></circle>
+            <circle class="node node-b" cx="200" cy="90" r="6"></circle>
+            <circle class="node node-b" cx="200" cy="210" r="8"></circle>
+            <circle class="node node-b" cx="200" cy="330" r="6"></circle>
+            <circle class="node node-c" cx="340" cy="150" r="7"></circle>
+            <circle class="node node-c" cx="340" cy="260" r="7"></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <h2>Built for teams shipping AI, not managing it.</h2>
+
+      <div class="feature-grid" id="feature-grid" data-state="fallback">
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">🧠</span>
+          <h3>Adaptive Learning Models</h3>
+          <p>Neural Flow continuously fine-tunes itself on your data, improving accuracy the more you use it.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">⚡</span>
+          <h3>Real-Time Inference</h3>
+          <p>Get predictions and insights in milliseconds with our low-latency inference pipeline.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon" aria-hidden="true">🔌</span>
+          <h3>Seamless Integrations</h3>
+          <p>Drop Neural Flow into your existing stack with simple REST APIs and SDKs for every major language.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <h2>Simple pricing that scales with usage.</h2>
+
+      <div class="pricing-grid" id="pricing-grid" data-state="fallback">
+        <article class="price-card">
+          <h3>Starter</h3>
+          <p class="price"><span class="amount">$0</span><span class="period">/month</span></p>
+          <ul class="price-features">
+            <li>1,000 API calls / month</li>
+            <li>Community support</li>
+            <li>Single project</li>
+          </ul>
+          <a class="btn btn-secondary price-cta" href="#contact">Get started</a>
+        </article>
+
+        <article class="price-card price-card--highlighted">
+          <p class="price-tag">Most teams choose this</p>
+          <h3>Pro</h3>
+          <p class="price"><span class="amount">$49</span><span class="period">/month</span></p>
+          <ul class="price-features">
+            <li>100,000 API calls / month</li>
+            <li>Priority email support</li>
+            <li>Up to 10 projects</li>
+            <li>Advanced analytics</li>
+          </ul>
+          <a class="btn btn-primary price-cta" href="#contact">Get started</a>
+        </article>
+
+        <article class="price-card">
+          <h3>Enterprise</h3>
+          <p class="price"><span class="amount">$499</span><span class="period">/month</span></p>
+          <ul class="price-features">
+            <li>Unlimited API calls</li>
+            <li>Dedicated support &amp; SLA</li>
+            <li>Unlimited projects</li>
+            <li>Custom model training</li>
+          </ul>
+          <a class="btn btn-secondary price-cta" href="#contact">Talk to sales</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-copy">
+        <h2>Tell us what you're building.</h2>
+        <p>
+          Questions about limits, custom models, or enterprise terms — send a
+          note and a real person replies, usually the same day.
+        </p>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>Neural Flow</span>
+    <span>© 2026 Neural Flow, Inc.</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
